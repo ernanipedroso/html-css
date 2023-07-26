@@ -24,20 +24,33 @@
         tr.media{
             color: white;
             background-color: gray;
+            
         }
+      
 
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="area">
+            <col class="diciplinas">
+            <col class="notas" span="2">
+            <col class="media">
+
+        
+        </colgroup>
+        
+
         <h1>Boletim Escolar</h1>
+
         <caption>Medias Bimestrais</caption>
         <thead>
             <tr>
-                <th rowspan="2">Area</th>
-                <th rowspan="2">Diciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Media</th>
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Diciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Media</th>
             </tr>
             <tr>
                 <td>nota1</td>
@@ -45,7 +58,7 @@
             </tr>
         </thead>
         <tr>
-            <th rowspan="4">Exatas</th>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
             <td>Matematica</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -74,10 +87,10 @@
 
         </tr>
         <tr class="media">
-        <th colspan="4">Media de Exatas</th>
+        <th colspan="4" scope="row">Media de Exatas</th>
         <td>0.0</td>
         <tr>
-            <th rowspan="2">Humanas</th>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
             <td>Historia</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -90,7 +103,7 @@
             <td>0.0</td>
         </tr>
         <tr class="media">
-            <th colspan="4">Media de Humanas</th>
+            <th colspan="4" scope="row">Media de Humanas</th>
             <td>0.0</td>
         </tr>
             <tfoot>
