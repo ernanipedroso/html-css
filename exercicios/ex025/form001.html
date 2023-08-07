@@ -7,14 +7,19 @@
 </head>
 <body>
     <h1>meu primeiro formulario</h1>\
-    <form autocomplete="off">
+    <form autocomplete="on" method="post">
         <p><label for="Nome">Nome:</label>
-            <input type="text" name="Nome" id="Nome">
+            <input type="text" name="Nome" id="Nome" placeholder="seu primeiro nome" autocomplete="username" required>
         </p>
         <p><label for="sobrenome">Sobrenome:</label>
             <input type="text" name="Sobrenome" id="sobrenome">
         </p>
+        <p>
+            <label for="isen">senha</label>
+            <input type="password" name="sen" id="isen" placeholder="min 6 letras" autocomplete="current-password" required minlength="6">
+        </p>
         <p><input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </p>
     </form>
 
