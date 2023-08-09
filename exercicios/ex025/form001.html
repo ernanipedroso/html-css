@@ -6,30 +6,44 @@
     <title>primeiro formulario</title>
 </head>
 <body>
-    <h1>meu primeiro formulario</h1>\
-    <form autocomplete="on" method="post">
-        <p><label for="Nome">Nome:</label>
-            <input type="text" name="Nome" id="Nome" placeholder="seu primeiro nome" autocomplete="username" required>
-        </p>
-        <p><label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="Sobrenome" id="sobrenome">
-        </p>
-        <p>
-            <label for="isen">senha</label>
-            <input type="password" name="sen" id="isen" placeholder="min 6 letras" autocomplete="current-password" required minlength="6">
-        </p>
-        <p>
-            <label for="idate"> data</label>
-            <input type="date" placeholder="data"required >
-        </p>
-        <p>
-            <label for="itel"> telefone</label>
-            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxx-xxxx" >
-        </p>
-        <p><input type="submit" value="enviar">
-            <input type="reset" value="limpar">
-        </p>
+    <h1>Meu Primeiro Formulario</h1>\
+    <form action="#" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados bBsicos</legend>
+                 
+                <p><label for="Nome">Nome:</label>
+                    <input type="text" name="Nome" id="Nome" placeholder="seu primeiro nome" autocomplete="username" required>
+                </p>
+                <p><label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="Sobrenome" id="sobrenome">
+                </p>
+                <p>
+                    <label for="idate"> Aniversario</label>
+                    <input type="date" placeholder="data"required >
+                </p>
+                <p>
+                    <label for="itel"> telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxx-xxxx" >
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <p>
+                <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+
+                <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label><br>
+
+                <input type="checkbox" name="vole" id="ivole"><label for="ivole">Volei</label>
+            </p>
+        </fieldset>
+         <fieldset>
+            <input type="radio" name="sexo" id="isxmas" value="m"><label for="isxmas">msculino</label><br>
+
+            <input type="radio" name="sexo" id="isfem" value="f"><label for="isfem">feminino</label>
+
+         </fieldset>
     </form>
+
 
 
     
