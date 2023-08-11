@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulario</h1>\
-    <form action="#" method="get" autocomplete="on">
+    <form action="#" method="post" autocomplete="on">
         <fieldset>
             <legend>Dados bBsicos</legend>
                  
@@ -42,6 +42,20 @@
             <input type="radio" name="sexo" id="isfem" value="f"><label for="isfem">feminino</label>
 
          </fieldset>
+
+         <fieldset>
+            <legend>Cor favorita</legend>
+            <input type="color" name="cor" id="icor" value="#00ff00"><label for="icor">cor</label> <br>
+
+            <input type="range" name="nivel" id="inivel" min="1" max="10"><label for="inivel">quanto voce gosta dessa cor</label>
+         </fieldset>
+         <fieldset>
+            <input type="file" name="documento" id="idocumento"><label for="idocumento">adicione uma foto sua</label>
+         </fieldset>
+
+         <input type="reset" >
+         <input type="submit">
+
     </form>
 
 
